@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import PersonContainer from './components/PersonContainer'
+// import { getPeopleAxios, getPeopleFetch } from './utils'
+const axios = require('axios');
+const url = 'http://localhost:3000'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    people: []
+  }
+
+  componentDidMount(){
+    axios.get(`${url}/people`)
+      .then(response => {
+        this.setState({
+          people: response.data
+        })
+      })
+  }
+  render(){
+    console.log(this.state);
+
+    return (
+      <div className="App">
+        <PersonContainer people={this.state.people}/>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -7,23 +7,40 @@ const url = 'http://localhost:3000'
 
 class App extends Component {
   state = {
-    people: []
+    people: [],
+    error: true
   }
 
   componentDidMount(){
-    axios.get(`${url}/people`)
+    axios(`${url}/people`)
       .then(response => {
-        this.setState({
-          people: response.data
-        })
+        if(response.status === 200 || response){
+          this.setState({
+            people: response.data,
+            error: false
+          })
+        } else {
+          this.setState({
+            error: true
+
+          })
+        }
       })
+
   }
   render(){
-    console.log(this.state);
 
     return (
       <div className="App">
+        { this.state.error
+        ?
+        <>
+        <p id='line'> Something went wrong </p>
+        <img id='meme' src='https://i.kym-cdn.com/photos/images/original/000/768/910/412.png' />
+        </>
+        :
         <PersonContainer people={this.state.people}/>
+        }
       </div>
     );
   }

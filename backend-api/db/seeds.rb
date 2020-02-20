@@ -25,7 +25,7 @@ Person.create(
 Person.create(
   name: 'Tia Ciata.',
   bio: 'was a Brazilian sambista in a time where samba was prohibited. She was one of the people who helped change that. Thanks to her more people were able to play the rithm.',
-  image_url: 'https://s.ebiografia.com/img/pe/ss/pessoas_negras_importantes_4.jpg',
+  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tia_Ciata_Minc.png/220px-Tia_Ciata_Minc.png',
   DOB: '1854')
 
 
@@ -62,7 +62,7 @@ Person.create(
   name: 'Ella Baker',
   bio: 'Ella Baker is one of history’s lesser-known civil rights heroes, yet one of the most important. If Martin Luther King Jr. was the head of the civil rights movement, Ella Baker was its backbone.
 Born on Dec. 13, 1903, in Norfolk, Virginia, and raised in North Carolina, Baker cultivated her passion and desire for social justice at a young age. Her grandmother, who was a slave, once told her a story of being whipped for refusing to marry a man of her slave owner’s choosing — fueling Baker’s desire for systematic change and justice for her people.',
-  image_url: 'https://lh3.googleusercontent.com/proxy/RPMJ-0B2gzwFLWilIV7kunPNBkLkMvinRRazjri5a1UONfNcIC0bB-aqTTgZNm4Q3I_6LHoHLgbO1_6wcmUawc-X4HRr1dD1c7luPP8QRlluOUf7eSwxbFiNcIs8NVM2p0YhqQ',
+  image_url: 'https://i.pinimg.com/originals/8d/2a/8e/8d2a8e92ba2bf332c4e4266163dd77d0.jpg',
   DOB: 'December 13, 1903')
 
 
@@ -70,6 +70,6 @@ Person.create(
   name: 'Jean-Michel Basquiat',
   bio: 'was an American artist of Haitian and Puerto Rican descent. Basquiat first achieved fame as part of SAMO, an informal graffiti duo who wrote enigmatic epigrams in the cultural hotbed of the Lower East Side of Manhattan during the late 1970s, where rap, punk, and street art coalesced into early hip-hop music culture. By the 1980s, his neo-expressionist paintings were being exhibited in galleries and museums internationally. The Whitney Museum of American Art held a retrospective of his art in 1992.
 Basquiat\'s art focused on dichotomies such as wealth versus poverty, integration versus segregation, and inner versus outer experience. He appropriated poetry, drawing, and painting, and married text and image, abstraction, figuration, and historical information mixed with contemporary critique.',
-  image_url: 'https://upload.wikimedia.org/wikipedia/en/6/6e/Jean-Michel_Basquiat_1986_by_William_Coupon.jpg',
+  image_url: 'https://repeatingislands.files.wordpress.com/2019/04/bas.jpg?w=768',
   DOB: 'December 22, 1960')
 p 'seeds done'

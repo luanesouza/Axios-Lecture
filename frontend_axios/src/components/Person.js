@@ -6,9 +6,10 @@ export default function Person(props){
     <section className='person-info'>
       <img src={image_url} alt={`${name}`}/>
       <section className='name-dob'>
-        <h1>{name}</h1>
-        <p>{dob}</p>
-        <p>{bio}</p>
+        <p id='line'>_____________________</p>
+        <h1 id='name'>{name}</h1>
+        <p id='dob'>{dob}</p>
+        <p id='bio'>{bio}</p>
       </section>
     </section>
   )

@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Person.destroy_all()
+p 'seeds destroyed'
+
 
 Person.create(
   name: 'Martin Luther King Jr.',
@@ -37,7 +40,7 @@ Person.create(
 Person.create(
   name: 'Luiz Gama',
   bio: 'was a Brazilian Romantic poet, journalist, lawyer, Republican and a prominent abolitionist. Born free and sold illegaly by his white father to pay off his debts, Gama fought for his freedom and became a lawyer. As a lawyer, Gama defended blacks in court who were illegally enslaved, especially those who were enslaved after slave trade was abolished in 1831, and fought for their rights. Gama freed more than 500 slaves through the courts and also purchased the freedom of individual slaves. He is considered the Father of Abolition in Brazil.',
-  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Angela_Davis_en_Bogot%C3%A1%2C_Septiembre_de_2010.jpg/440px-Angela_Davis_en_Bogot%C3%A1%2C_Septiembre_de_2010.jpg',
+  image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Luiz_Gama_c_1880.png/400px-Luiz_Gama_c_1880.png',
   DOB: 'June 21, 1830')
 
 
@@ -69,3 +72,4 @@ Person.create(
 Basquiat\'s art focused on dichotomies such as wealth versus poverty, integration versus segregation, and inner versus outer experience. He appropriated poetry, drawing, and painting, and married text and image, abstraction, figuration, and historical information mixed with contemporary critique.',
   image_url: 'https://upload.wikimedia.org/wikipedia/en/6/6e/Jean-Michel_Basquiat_1986_by_William_Coupon.jpg',
   DOB: 'December 22, 1960')
+p 'seeds done'

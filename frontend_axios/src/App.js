@@ -3,7 +3,7 @@ import './App.css';
 import PersonContainer from './components/PersonContainer'
 // import { getPeopleAxios, getPeopleFetch } from './utils'
 const axios = require('axios');
-const url = 'http://localhost:3000'
+const url = 'https://historical-figures.herokuapp.com/' 
 
 class App extends Component {
   state = {
@@ -36,7 +36,7 @@ class App extends Component {
         ?
         <>
         <p id='line'> Something went wrong </p>
-        <img id='meme' src='https://i.kym-cdn.com/photos/images/original/000/768/910/412.png' />
+        <img id='meme' src='https://i.kym-cdn.com/photos/images/original/000/768/910/412.png' alt='meme'/>
         </>
         :
         <PersonContainer people={this.state.people}/>

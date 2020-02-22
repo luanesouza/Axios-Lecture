@@ -8,7 +8,7 @@ export default function Person(props){
       <section className='name-dob'>
         <p id='line'>_____________________</p>
         <h1 id='name'>{name}</h1>
-        <p id='dob'>{dob}</p>
+        <p id='dob'>Date of birth: {dob}</p>
         <p id='bio'>{bio}</p>
       </section>
     </section>

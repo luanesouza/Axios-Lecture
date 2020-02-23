@@ -55,7 +55,9 @@
 
 <p style='center'> --------- FETCH CRUD CHEAT SHEET ------------- </p>
 
-`const createPeopleFetch = (data) => {
+```
+
+const createPeopleFetch = (data) => {
 
   fetch(${url}, {
 
@@ -79,9 +81,11 @@
 
   })
 
-}`
+}
+```
 
-`const deletePeopleFetch = (id) => {
+```
+const deletePeopleFetch = (id) => {
 
   fetch(${url}/people/${id}, {
 
@@ -93,10 +97,12 @@
 
   .then(res => console.log('worked', res))
 
-}`
+}
+```
 
 
-`const updatePeopleFetch = (id) => {
+```
+const updatePeopleFetch = (id) => {
 
   let data = {}
 
@@ -120,11 +126,14 @@
 
   })
 
-}`
+}
+```
+
 
 ------------ WITH HEADERS ---------------
 
-`const createPersonAxios = async (data) => {
+```
+const createPersonAxios = async (data) => {
 
   try {
 
@@ -145,10 +154,11 @@
 
   }
 
-}`
+}
+```
 
 
-`let data = {
+```let data = {
 
   id: 10,
 
@@ -159,4 +169,5 @@
   image_url: 'https://images.squarespace-cdn.com/content/v1/566ca3e51115e0874922e571/1527697769922-9IYXS5CLRRRSNFQI2LPD/ke17ZwdGBToddI8pDm48kBXfl9523PPCMjiJNCtOhKtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx099H1iDMs77VbX2wfrKeigECPMbG3kEu0b-ipHJs1wyNrL1545Wed7woU4xgzO5Q/static1.squarespace.jpg',
 
   dob: 'October 12, 1985'
-}`
+}
+```

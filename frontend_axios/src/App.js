@@ -12,9 +12,14 @@ class App extends Component {
     error: true
   }
 
-  componentDidMount(){
+   async componentDidMount(){
+     let data = await getPeopleAxios()
+      this.setState({
+        people: data,
+        error: false
+      })
 
-  }
+   }
 
   render(){
 

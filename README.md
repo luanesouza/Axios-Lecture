@@ -7,6 +7,10 @@
 - Asking Questions
 - Parking Lot
 
+## What
+## Why
+## How
+
 ## By the end of this lecture you will be able to:
  - Refactor a fetch call to use axios instead
  - Use async and await
@@ -28,16 +32,30 @@
 4. CRUD with Axios (using try and catch)
 
 
+
+### Questions
+
+
+
 ### PART TWO
 
  [YOU TRY!!!](https://github.com/luanesouza/fantastic-people)
+
+### PART THREE
+
+Let's try it together now!
+
 
 
 #### HINTS
  -- hints for delete go here --
 
+I am a female
+I've saved over 300 slaves
 
  -- hints for update go here --
+
+1. You may recognize this image, but it's the wrong one :/
 
 
 ## Extra Resources
@@ -47,6 +65,7 @@
 
 [Deep into Axios - Advanced](https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/)
 
+[componentDidMount async? Is that okay?](https://stackoverflow.com/questions/47970276/is-using-async-componentdidmount-good)
 
 
 
@@ -59,7 +78,7 @@
 
 const createPeopleFetch = (data) => {
 
-  fetch(${url}, {
+  fetch(`${url}`, {
 
     method: 'POST',
 
@@ -85,9 +104,9 @@ const createPeopleFetch = (data) => {
 ```
 
 ```
-const deletePeopleFetch = (id) => {
+const deletePersonFetch = (id) => {
 
-  fetch(${url}/people/${id}, {
+  fetch(`${url}/${id}`, {
 
   method: 'DELETE',
 
@@ -102,11 +121,11 @@ const deletePeopleFetch = (id) => {
 
 
 ```
-const updatePeopleFetch = (id) => {
+const updatePersonFetch = (id) => {
 
   let data = {}
 
-  fetch(${url}/${id}, {
+  fetch(`${url}/${id}`, {
 
     method: 'PUT',
 
@@ -137,7 +156,7 @@ const createPersonAxios = async (data) => {
 
   try {
 
-    let response = await axios.post(${url},
+    let response = await axios.post(`${url}`,
 
       data,
 
@@ -171,3 +190,8 @@ const createPersonAxios = async (data) => {
   dob: 'October 12, 1985'
 }
 ```
+
+
+Is there a problem with making a lifecycle method async?
+
+What is the difference between console.error and console.log
